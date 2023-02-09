@@ -39,7 +39,7 @@ const db = new Pool({
   database: process.env.DBNAMEDEV,
 });
 db.connect((err) => {
-  if (err) throw err;
+  if (err) throw new err;
   console.log("Connected!");
 });
 
